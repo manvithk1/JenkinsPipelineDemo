@@ -10,6 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building1111'
+                sh 'java -version'
             }
         }
         stage('Deploy') {
