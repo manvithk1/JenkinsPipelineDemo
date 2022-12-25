@@ -1,6 +1,3 @@
-node {
-    stage('Build')
-    {
-        sh 'java -version '
-    }
+stage('build') {
+    // some block
 }
