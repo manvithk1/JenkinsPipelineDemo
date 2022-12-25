@@ -18,8 +18,7 @@ stage('Pytest') {
     // some block
     // example of using arguments to a script
     echo 'Running python test scripts'
-    bat 'cd C:\\Jenkins\\Src_Code_Git_Folder&&git clone git@github.com:manvithk1/JenkinsPipelineDemo.git'
-    bat 'python pyscript.py'
+    bat 'cd C:\\Jenkins\\Src_Code_Git_Folder&&git clone git@github.com:manvithk1/JenkinsPipelineDemo.git && python pyscript.py'
     
     if (currentBuild.result == null || currentBuild.result == 'SUCCESS')
     {
