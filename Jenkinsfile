@@ -5,10 +5,12 @@ stage('build') {
     echo 'Building'
     bat 'cd C:\\Users\\manvi\\DSA-Bootcamp-Java&&dir&&git pull&&git status'
 }
-stage('lightRailtest') {
+stage('Pytest') {
     // some block
     // example of using arguments to a script
-    echo 'Running lightRailtests'
+    echo 'Running python test scripts'
+    bat 'python pyscript.py'
+    
 }
 stage('SalinaTests') {
     // some block
