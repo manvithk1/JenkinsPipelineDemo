@@ -1,4 +1,19 @@
 node{
+    stage('PreCleanup') {
+    // some block
+    // example of using arguments to a script
+    echo 'PreCleanup'
+    bat 'rm -rf *'
+    
+    if (currentBuild.result == null || currentBuild.result == 'SUCCESS')
+    {
+        echo "Pre Cleanup job is successfull"
+    }
+    else
+    {   
+        echo "Pre Cleanup job is not successfull"
+    }
+}
 stage('build') {
     // some block
     // example of using arguments to a script
