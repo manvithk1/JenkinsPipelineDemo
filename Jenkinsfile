@@ -9,7 +9,7 @@ stage('Pytest') {
     // some block
     // example of using arguments to a script
     echo 'Running python test scripts'
-    bat 'git clone git@github.com:manvithk1/JenkinsPipelineDemo.git'
+    bat 'cd C:\Jenkins\Src_Code_Git_Folder&&git clone git@github.com:manvithk1/JenkinsPipelineDemo.git'
     bat 'python pyscript.py'
     
 }
