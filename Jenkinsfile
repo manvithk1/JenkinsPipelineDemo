@@ -3,7 +3,7 @@ stage('build') {
     // some block
     // example of using arguments to a script
     echo 'Building'
-    bat 'cd C:\\Users\\manvi\\DSA-Bootcamp-Java;git pull;git status'
+    bat 'cd C:\\Users\\manvi\\DSA-Bootcamp-Java'
 }
 stage('lightRailtest') {
     // some block
