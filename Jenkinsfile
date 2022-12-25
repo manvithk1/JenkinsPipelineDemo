@@ -3,7 +3,7 @@ stage('build') {
     // some block
     // example of using arguments to a script
     echo '~~~~~~~~~~~~~~~~~~~~~~~~Building~~~~~~~~~~~~~~~~~~~~~~~~~~~'
-    bat 'cd C:\\Jenkins\\Src_Code_Git_Folder&&git clone git@github.com:kunal-kushwaha/DSA-Bootcamp-Java.git&&dir&&git status'
+    bat 'cd C:\\Jenkins\\Src_Code_Git_Folder&&git clone git@github.com:kunal-kushwaha/DSA-Bootcamp-Java.git&&dir'
     
     if (currentBuild.result == null || currentBuild.result == 'SUCCESS')
     {
