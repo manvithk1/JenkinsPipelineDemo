@@ -2,7 +2,7 @@ stage('build') {
     // some block
     // example of using arguments to a script
     echo 'Building'
-    bat 'Batchfile'
+    bat 'BatchFile.bat'
 }
 stage('lightRailtest') {
     // some block
