@@ -2,6 +2,7 @@ node{
 stage('build') {
     // some block
     // example of using arguments to a script
+    // pull_req_br comments added to the Jenkins file - Groovy script
     echo '~~~~~~~~~~~~~~~~~~~~~~~~Building~~~~~~~~~~~~~~~~~~~~~~~~~~~'
     bat 'git clone git@github.com:kunal-kushwaha/DSA-Bootcamp-Java.git&&dir&&git status'
     
