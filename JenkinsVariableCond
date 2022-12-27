@@ -14,17 +14,19 @@ pipeline {
             }
         }
         stage('Deploy') {
-            steps {
-                when{ 
-                expression { params.ENVIRONMENT == 'PRODUCTION'}
-                }
+            when {
+                // Only deploy if the environment is NOT production
+                expression { params.ENVIRONMENT == 'PRODUCTION' }
+            }
+            steps {                
                 echo "This stage deploys the project"            
             }
         }
         stage('Report') {
             steps {
                 echo "This stage generates a report"
-                bat "echo 'This is the change log.' > report.txt"
+                
+                bat "echo ${params.CHANGELOG} > ${params.ENVIRONMENT}.txt"
                 archiveArtifacts allowEmptyArchive: true, 
                     artifacts: '*.txt', 
                     fingerprint: true, 
