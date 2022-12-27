@@ -28,6 +28,14 @@ pipeline{
                       echo "MIN_SIZE = ${env.MIN_SIZE}"
                 }
           }
+          stage('Example') {
+            steps {
+                echo "I am your father.  My name is ${params.FATHER}"
+                echo "My favorite phrase is ${params.PHRASE}"
+                echo "Will I rule the universe? ${params.RUN_TESTS}"
+                echo "I live in ${params.AWS_REGION}"
+                echo "Can I tell you a secret? ${params.DATABASE_PASSWORD}"
+            }
 
    }
 }
