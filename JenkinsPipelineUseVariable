@@ -35,7 +35,7 @@ pipeline{
                 echo "Will I rule the universe? ${params.RUN_TESTS}"
                 echo "I live in ${params.AWS_REGION}"
                 echo "Can I tell you a secret? ${params.DATABASE_PASSWORD}"
-            }
-
+               }
+          }
    }
 }
