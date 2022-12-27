@@ -15,7 +15,9 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                when{ params.ENVIRONMENT == 'PRODUCTION'}
+                when{ 
+                expression { params.ENVIRONMENT == 'PRODUCTION'}
+                }
                 echo "This stage deploys the project"            
             }
         }
