@@ -5,7 +5,7 @@ pipeline{
        MIN_SIZE = 1
    }
    parameters {
-         string(name: 'FATHER', defaultValue: 'Vader', description: 'Enter your father's name')
+         string(name: 'FATHER', defaultValue: 'Vader', description: 'Enter your fathers name')
          text(name: 'PHRASE', description:'Enter your favourite paraphrase from a Charles Dickens Book', defaultValue: 'It was the best times, it was worst of times')
          booleanParam(name: 'RUN_TESTS', defaultValue: 'false', description: 'Toggle this value to run tests.')
          choice(name: 'AWS_REGION', choices: ['us-east-1','us-east-2,'us-west-1','us-west-2'], description: 'Select the AWS region for deployment')
