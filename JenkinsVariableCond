@@ -4,7 +4,7 @@ pipeline {
         choice(name: 'ENVIRONMENT',
             choices: ['DEVELOPMENT' , 'STAGING', 'PRODUCTION'],
             description: 'Choose the environment for this deployment')
-        password(name: 'APIKEY', defaltValue: '123ABC', description: 'Passes a secret value into the pipeline')
+        password(name: 'APIKEY', defaultValue: '123ABC', description: 'Passes a secret value into the pipeline')
         text(name:'CHANGELOG',defaultValue: 'This is the change log.',description: 'Free-form text that can be added to a report')
     }
     stages {
