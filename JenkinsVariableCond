@@ -8,12 +8,12 @@ pipeline {
         text(name:'CHANGELOG',defaultValue: 'This is the change log.',description: 'Free-form text that can be added to a report')
     }
     stages {
-        stage('Test') {
+        stage('Test.....') {
             steps {
                 echo "This step tests the project"
             }
         }
-        stage('Deploy') {
+        stage('Deploy.....') {
             when {
                 // Only deploy if the environment is NOT production
                 expression { params.ENVIRONMENT == 'PRODUCTION' }
@@ -22,7 +22,7 @@ pipeline {
                 echo "This stage deploys the project"            
             }
         }
-        stage('Report') {
+        stage('Report.....') {
             steps {
                 echo "This stage generates a report"
                 
